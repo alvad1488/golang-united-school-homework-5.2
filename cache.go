@@ -53,7 +53,7 @@ func (inp *Cache) Keys() []string {
 	inp.CleanUp()
 	data := inp.rowset
 	for _, row := range data {
-		values = append(values, row.value)
+		values = append(values, row.key)
 	}
 
 	return values
